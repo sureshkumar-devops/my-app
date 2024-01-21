@@ -19,6 +19,21 @@
     <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
 
+  <profiles>
+	  <profile>
+		  <id>sonar</id>
+	          <activation>
+			<activeByDefault>true</activeByDefault>
+	         </activation>		  
+		 <properties>
+			 <sonar.host.url>
+				 http://localhost:9000/
+			 </sonar.host.url>
+	         </properties>	   		
+	  </profile>
+  </profiles>
+
+
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
